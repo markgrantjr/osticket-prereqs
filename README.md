@@ -60,6 +60,10 @@ Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and un
 
 
 ![Screen Shot 2024-10-09 at 9 41 24 PM](https://github.com/user-attachments/assets/6cd695a9-3587-4a24-b6f2-8bd529124866)
+![Screen Shot 2024-10-10 at 11 34 46 PM](https://github.com/user-attachments/assets/6fb96e57-afb8-42dd-beb1-ec41c3b89b8d)
+![Screen Shot 2024-10-10 at 11 35 40 PM](https://github.com/user-attachments/assets/fc19ac4c-2aa4-4d30-a4bf-6dcec467cb07)
+
+
 
 Install / Enable Internet Information Services in Windows WITH CGI
 
@@ -116,9 +120,11 @@ Open IIS as an Admin
 
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
+![Screen Shot 2024-10-10 at 11 45 06 PM](https://github.com/user-attachments/assets/1e701098-6c06-4367-bf0b-65edb3fc735f)
 
+![Screen Shot 2024-10-10 at 11 45 23 PM](https://github.com/user-attachments/assets/caab19dc-e76f-496f-892a-d7163c1d0000)
 
-![Screen Shot 2024-10-10 at 9 45 03 PM](https://github.com/user-attachments/assets/ca334d7e-eafb-4e19-964d-fa5c6923084c)
+Reload IIS (open IIS,stop and start the server)
 
 
 ![Screen Shot 2024-10-09 at 10 12 58 PM](https://github.com/user-attachments/assets/398326ee-49d1-402c-9fa6-8df707137134)
@@ -141,6 +147,9 @@ Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 Go to sites -> Default -> osTicket
 On the right, click “Browse *:80”
 
+![Screen Shot 2024-10-11 at 12 02 29 AM](https://github.com/user-attachments/assets/286123d8-6142-4a80-ad95-cc4990a194ef)
+![Screen Shot 2024-10-11 at 12 10 54 AM](https://github.com/user-attachments/assets/87a70292-8f58-4081-afed-82fa0eaff109)
+![Screen Shot 2024-10-11 at 12 11 12 AM](https://github.com/user-attachments/assets/d5a53313-4a9c-4b4c-ac7b-92ba5708b6e9)
 
 ![Screen Shot 2024-10-10 at 9 58 41 PM](https://github.com/user-attachments/assets/660dcfbd-c06c-48f9-896d-0e628c69f02d)
 
@@ -190,6 +199,7 @@ MySQL Database: osTicket
 MySQL Username: 
 MySQL Password:
 Click “Install Now!”
+![Screen Shot 2024-10-11 at 12 16 29 AM](https://github.com/user-attachments/assets/a2c819cf-16d4-4ba2-a0b5-530ec6882255)
 
 
 ![Screen Shot 2024-10-09 at 11 15 00 PM](https://github.com/user-attachments/assets/9f94e5fc-83b8-42f2-9bd9-790315d37012)
