@@ -84,6 +84,37 @@ Create the directory PHP in the c drive and then from the “osTicket-Installati
 
 
 
+![Screen Shot 2024-10-09 at 9 57 46 PM](https://github.com/user-attachments/assets/426ff51b-72a3-410c-9597-eaabbb6446c1)
+
+
+From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+
+
+
+![Screen Shot 2024-10-09 at 10 03 43 PM](https://github.com/user-attachments/assets/0fc9d067-6f5d-4ae8-94fc-a898ad8dd84e)
+
+
+From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+Typical Setup ->Launch Configuration Wizard (after install) ->Standard Configuration ->
+
+
+
+![Screen Shot 2024-10-09 at 10 07 13 PM](https://github.com/user-attachments/assets/a820af00-9f5e-44d2-bc7d-97297782e568)
+
+
+Open IIS as an Admin
+
+
+
+!![Screen Shot 2024-10-09 at 10 09 25 PM](https://github.com/user-attachments/assets/ad4c1e61-b48e-42bd-aa2d-658b9269e5e0)
+
+
+Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+
+
+
+
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
