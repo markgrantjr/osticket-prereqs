@@ -109,16 +109,93 @@ Open IIS as an Admin
 !![Screen Shot 2024-10-09 at 10 09 25 PM](https://github.com/user-attachments/assets/ad4c1e61-b48e-42bd-aa2d-658b9269e5e0)
 
 
+
+![Screen Shot 2024-10-09 at 10 10 12 PM](https://github.com/user-attachments/assets/00b8671c-813b-4070-bab5-3b93829359eb)
+
+
+
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
 
 
+![Screen Shot 2024-10-10 at 9 45 03 PM](https://github.com/user-attachments/assets/ca334d7e-eafb-4e19-964d-fa5c6923084c)
 
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+![Screen Shot 2024-10-09 at 10 12 58 PM](https://github.com/user-attachments/assets/398326ee-49d1-402c-9fa6-8df707137134)
+
+![Screen Shot 2024-10-09 at 10 19 31 PM](https://github.com/user-attachments/assets/1f8c6f32-a61d-4cf9-9476-45a17f6e2a69)
+
+
+![Screen Shot 2024-10-09 at 10 23 48 PM](https://github.com/user-attachments/assets/1bce8a57-fe3f-42ea-8a19-de0169111ae9)
+
+Install osTicket v1.15.8
+From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
+Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+
+
+![Screen Shot 2024-10-10 at 9 53 54 PM](https://github.com/user-attachments/assets/0704cb4f-97b6-4bc5-8064-453bcdd07041)
+
+
+![Screen Shot 2024-10-09 at 10 28 19 PM](https://github.com/user-attachments/assets/8c847038-2106-4635-a09c-cc293173fc38)
+
+Go to sites -> Default -> osTicket
+On the right, click “Browse *:80”
+
+
+![Screen Shot 2024-10-10 at 9 58 41 PM](https://github.com/user-attachments/assets/660dcfbd-c06c-48f9-896d-0e628c69f02d)
+
+
+![Screen Shot 2024-10-09 at 10 53 42 PM](https://github.com/user-attachments/assets/2319dec1-90fd-4dc4-9246-c5f72f3e56e9)
+
+
+Rename: ost-config.php
+From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+
+
+![Screen Shot 2024-10-09 at 10 56 28 PM](https://github.com/user-attachments/assets/2be77322-628d-420e-b73d-bb1e779f9b1b)
+
+
+![Screen Shot 2024-10-09 at 10 59 05 PM](https://github.com/user-attachments/assets/25c75b96-efdf-4984-b45b-069370ad248c)
+
+
+![Screen Shot 2024-10-09 at 11 00 16 PM](https://github.com/user-attachments/assets/be2a9298-ab9e-409e-a602-4a3fa4dcbf71)
+
+
+
+
+Assign Permissions: ost-config.php
+Disable inheritance -> Remove All
+New Permissions -> Everyone -> All
+
+
+![Screen Shot 2024-10-10 at 10 07 00 PM](https://github.com/user-attachments/assets/25d1e1ad-3181-4da2-bf27-73e3431080b4)
+
+
+![Screen Shot 2024-10-09 at 11 05 37 PM](https://github.com/user-attachments/assets/cf60e675-7cca-4f43-91c1-ffbdb2783228)
+
+
+![Screen Shot 2024-10-09 at 11 08 02 PM](https://github.com/user-attachments/assets/549f1a84-f87d-41bc-8a2b-30ec9ca89595)
+
+Open Heidi SQL
+Create a new session and Connect to the session
+
+
+![Screen Shot 2024-10-09 at 11 11 37 PM](https://github.com/user-attachments/assets/c5a1a42b-708e-4781-836e-eb77c06e29c3)
+
+Create a database called "osTicket"
+
+Continue Setting up osTicket in the browser
+MySQL Database: osTicket
+MySQL Username: 
+MySQL Password:
+Click “Install Now!”
+
+
+![Screen Shot 2024-10-09 at 11 15 00 PM](https://github.com/user-attachments/assets/9f94e5fc-83b8-42f2-9bd9-790315d37012)
+
+
+If all the steps are done correctly you will see this screen!
+
+
 <br />
