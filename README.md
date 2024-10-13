@@ -25,106 +25,89 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
+Create an Azure Virtual Machine,using a Windows 10 image,with 2 to 4 vCPUs
+
 
 ![Screen Shot 2024-10-09 at 9 16 11 PM](https://github.com/user-attachments/assets/e94b1771-41fb-499a-8ef2-274b5db019ea)
 
 
-
-Create an Azure Virtual Machine,using a Windows 10 image,with 2 to 4 vCPUs
-
-
+Use the public IP address along with the user name and password in Azure to log into the virtual machine with remote desktop
 
 
 ![Screen Shot 2024-10-09 at 9 25 53 PM](https://github.com/user-attachments/assets/c65cbf23-8fe8-48bd-b1f6-e67b1afd2b4d)
 
-
-
 ![Screen Shot 2024-10-09 at 9 28 43 PM](https://github.com/user-attachments/assets/d16d826e-619b-411a-9ac9-78e2b6980be0)
 
 
+Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
 
-</p>
-<p>
-  <br />
-Use the public IP address along with the user name and password in Azure to log into the virtual machine with remote desktop
-</p>
-<br />
 
 ![Screen Shot 2024-10-09 at 9 37 26 PM](https://github.com/user-attachments/assets/cb15b77a-a702-403c-9cd0-7bb669491bd9)
 
 ![Screen Shot 2024-10-09 at 9 38 31 PM](https://github.com/user-attachments/assets/1c101653-386e-4dbb-a986-9febf12c6763)
 
-Within the VM (osticket-vm), download the osTicket-Installation-Files.zip and unzip it onto your desktop. The folder should be called “osTicket-Installation-Files”
-
 <br />
+Install / Enable Internet Information Services in Windows WITH CGI
 
+World Wide Web Services -> Application Development Features -> MAKE SURE CGI IS CHECKED
 
 ![Screen Shot 2024-10-09 at 9 41 24 PM](https://github.com/user-attachments/assets/6cd695a9-3587-4a24-b6f2-8bd529124866)
 ![Screen Shot 2024-10-10 at 11 34 46 PM](https://github.com/user-attachments/assets/6fb96e57-afb8-42dd-beb1-ec41c3b89b8d)
 ![Screen Shot 2024-10-10 at 11 35 40 PM](https://github.com/user-attachments/assets/fc19ac4c-2aa4-4d30-a4bf-6dcec467cb07)
 
 
-
-Install / Enable Internet Information Services in Windows WITH CGI
-
-World Wide Web Services -> Application Development Features -> MAKE SURE CGI IS CHECKED
-
+From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
 
 
 ![Screen Shot 2024-10-09 at 9 48 17 PM](https://github.com/user-attachments/assets/8ab906bb-d2e6-441d-8757-0bf1a494266e)
 
-From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
-
-
-![Screen Shot 2024-10-09 at 9 49 10 PM](https://github.com/user-attachments/assets/67258359-8cfb-43ad-9570-33f1975e4894)
 
 From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
 
 
 
-![Screen Shot 2024-10-09 at 9 56 12 PM](https://github.com/user-attachments/assets/10f47ce5-14f0-4088-a714-abc2de011180)
+![Screen Shot 2024-10-09 at 9 49 10 PM](https://github.com/user-attachments/assets/67258359-8cfb-43ad-9570-33f1975e4894)
+
 
 Create the directory PHP in the c drive and then from the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
 
 
-
-![Screen Shot 2024-10-09 at 9 57 46 PM](https://github.com/user-attachments/assets/426ff51b-72a3-410c-9597-eaabbb6446c1)
+![Screen Shot 2024-10-09 at 9 56 12 PM](https://github.com/user-attachments/assets/10f47ce5-14f0-4088-a714-abc2de011180)
 
 
 From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
 
 
-
-![Screen Shot 2024-10-09 at 10 03 43 PM](https://github.com/user-attachments/assets/0fc9d067-6f5d-4ae8-94fc-a898ad8dd84e)
+![Screen Shot 2024-10-09 at 9 57 46 PM](https://github.com/user-attachments/assets/426ff51b-72a3-410c-9597-eaabbb6446c1)
 
 
 From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
 Typical Setup ->Launch Configuration Wizard (after install) ->Standard Configuration ->
 
 
-
-![Screen Shot 2024-10-09 at 10 07 13 PM](https://github.com/user-attachments/assets/a820af00-9f5e-44d2-bc7d-97297782e568)
+![Screen Shot 2024-10-09 at 10 03 43 PM](https://github.com/user-attachments/assets/0fc9d067-6f5d-4ae8-94fc-a898ad8dd84e)
 
 
 Open IIS as an Admin
 
 
-
-!![Screen Shot 2024-10-09 at 10 09 25 PM](https://github.com/user-attachments/assets/ad4c1e61-b48e-42bd-aa2d-658b9269e5e0)
-
-
-
-![Screen Shot 2024-10-09 at 10 10 12 PM](https://github.com/user-attachments/assets/00b8671c-813b-4070-bab5-3b93829359eb)
-
+![Screen Shot 2024-10-09 at 10 07 13 PM](https://github.com/user-attachments/assets/a820af00-9f5e-44d2-bc7d-97297782e568)
 
 
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
 
+
+!![Screen Shot 2024-10-09 at 10 09 25 PM](https://github.com/user-attachments/assets/ad4c1e61-b48e-42bd-aa2d-658b9269e5e0)
+
+![Screen Shot 2024-10-09 at 10 10 12 PM](https://github.com/user-attachments/assets/00b8671c-813b-4070-bab5-3b93829359eb)
+
+
+Reload IIS (open IIS,stop and start the server)
+
+
 ![Screen Shot 2024-10-10 at 11 45 06 PM](https://github.com/user-attachments/assets/1e701098-6c06-4367-bf0b-65edb3fc735f)
 
 ![Screen Shot 2024-10-10 at 11 45 23 PM](https://github.com/user-attachments/assets/caab19dc-e76f-496f-892a-d7163c1d0000)
-
-Reload IIS (open IIS,stop and start the server)
 
 
 ![Screen Shot 2024-10-09 at 10 12 58 PM](https://github.com/user-attachments/assets/398326ee-49d1-402c-9fa6-8df707137134)
